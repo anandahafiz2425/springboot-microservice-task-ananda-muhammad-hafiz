@@ -1,4 +1,4 @@
-package com.springboot.book_management.book.dto.request;
+package com.springboot.book_management.modules.book.dto.request;
 
 import java.time.LocalDate;
 

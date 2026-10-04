@@ -1,4 +1,4 @@
-package com.springboot.book_management.book.controller;
+package com.springboot.book_management.modules.book.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.springboot.book_management.common.response.Response;
+import com.springboot.book_management.modules.book.dto.request.CreateBookRequest;
+import com.springboot.book_management.modules.book.dto.request.InquiryBookRequest;
+import com.springboot.book_management.modules.book.dto.request.PatchBookRequest;
+import com.springboot.book_management.modules.book.dto.request.UpdateBookRequest;
+import com.springboot.book_management.modules.book.dto.response.BookResponse;
+import com.springboot.book_management.modules.book.service.BookService;
 import com.springboot.book_management.common.response.GlobalResponse;
 import com.springboot.book_management.common.response.PageResponse;
-import com.springboot.book_management.book.dto.request.CreateBookRequest;
-import com.springboot.book_management.book.dto.request.InquiryBookRequest;
-import com.springboot.book_management.book.dto.request.PatchBookRequest;
-import com.springboot.book_management.book.dto.request.UpdateBookRequest;
-import com.springboot.book_management.book.dto.response.BookResponse;
-import com.springboot.book_management.book.service.BookService;
 
 import jakarta.validation.Valid;
 

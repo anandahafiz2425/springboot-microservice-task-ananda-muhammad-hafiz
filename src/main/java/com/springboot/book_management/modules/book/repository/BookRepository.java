@@ -1,4 +1,4 @@
-package com.springboot.book_management.book.repository;
+package com.springboot.book_management.modules.book.repository;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.springboot.book_management.book.entity.BookEntity;
+import com.springboot.book_management.modules.book.entity.BookEntity;
 
 @Repository
 public interface BookRepository extends JpaRepository<BookEntity, Long> {

@@ -1,4 +1,4 @@
-package com.springboot.book_management.book.service.impl;
+package com.springboot.book_management.modules.book.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,20 +8,20 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.stereotype.Service;
 
+import com.springboot.book_management.common.exception.BookNotFoundException;
+import com.springboot.book_management.common.exception.DuplicateIsbnException;
+import com.springboot.book_management.common.exception.EmptyRequestException;
 import com.springboot.book_management.common.response.PageResponse;
 import com.springboot.book_management.common.service.BaseService;
-import com.springboot.book_management.book.dto.request.CreateBookRequest;
-import com.springboot.book_management.book.dto.request.InquiryBookRequest;
-import com.springboot.book_management.book.dto.request.PatchBookRequest;
-import com.springboot.book_management.book.dto.request.UpdateBookRequest;
-import com.springboot.book_management.book.dto.response.BookResponse;
-import com.springboot.book_management.book.entity.BookEntity;
-import com.springboot.book_management.exception.BookNotFoundException;
-import com.springboot.book_management.exception.DuplicateIsbnException;
-import com.springboot.book_management.exception.EmptyRequestException;
-import com.springboot.book_management.book.mapper.BookMapper;
-import com.springboot.book_management.book.repository.BookRepository;
-import com.springboot.book_management.book.service.BookService;
+import com.springboot.book_management.modules.book.dto.request.CreateBookRequest;
+import com.springboot.book_management.modules.book.dto.request.InquiryBookRequest;
+import com.springboot.book_management.modules.book.dto.request.PatchBookRequest;
+import com.springboot.book_management.modules.book.dto.request.UpdateBookRequest;
+import com.springboot.book_management.modules.book.dto.response.BookResponse;
+import com.springboot.book_management.modules.book.entity.BookEntity;
+import com.springboot.book_management.modules.book.mapper.BookMapper;
+import com.springboot.book_management.modules.book.repository.BookRepository;
+import com.springboot.book_management.modules.book.service.BookService;
 
 import jakarta.transaction.Transactional;
 

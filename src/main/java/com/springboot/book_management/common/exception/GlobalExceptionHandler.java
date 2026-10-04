@@ -1,4 +1,4 @@
-package com.springboot.book_management.exception;
+package com.springboot.book_management.common.exception;
 
 import java.sql.SQLException;
 

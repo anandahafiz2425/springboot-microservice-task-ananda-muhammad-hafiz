@@ -1,14 +1,14 @@
-package com.springboot.book_management.book.mapper;
+package com.springboot.book_management.modules.book.mapper;
 
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
-import com.springboot.book_management.book.dto.request.CreateBookRequest;
-import com.springboot.book_management.book.dto.request.PatchBookRequest;
-import com.springboot.book_management.book.dto.request.UpdateBookRequest;
-import com.springboot.book_management.book.dto.response.BookResponse;
-import com.springboot.book_management.book.entity.BookEntity;
+import com.springboot.book_management.modules.book.dto.request.CreateBookRequest;
+import com.springboot.book_management.modules.book.dto.request.PatchBookRequest;
+import com.springboot.book_management.modules.book.dto.request.UpdateBookRequest;
+import com.springboot.book_management.modules.book.dto.response.BookResponse;
+import com.springboot.book_management.modules.book.entity.BookEntity;
 
 public class BookMapper {
 

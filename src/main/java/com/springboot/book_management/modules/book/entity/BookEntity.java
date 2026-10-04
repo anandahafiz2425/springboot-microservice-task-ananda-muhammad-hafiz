@@ -1,4 +1,4 @@
-package com.springboot.book_management.book.entity;
+package com.springboot.book_management.modules.book.entity;
 
 import java.time.LocalDate;
 
