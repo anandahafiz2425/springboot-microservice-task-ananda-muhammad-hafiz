@@ -1,0 +1,171 @@
+{
+  "info": {
+    "_postman_id": "4d29b1c8-ca47-44c0-b510-868f2946e41c",
+    "name": "Book Management",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "33676573"
+  },
+  "item": [
+    {
+      "name": "Create",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"isbn\": \"9780132350884\",\r\n    \"title\": \"Testing\",\r\n    \"author\": \"Ananda Muhammad Hafiz\",\r\n    \"publishedDate\": \"2026-10-04\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8073/api/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8073",
+          "path": [
+            "api",
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Inquiry",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 10,\r\n    \"title\": \"\",\r\n    \"author\": \"\",\r\n    \"isbn\": \"a\",\r\n    \"publishedDate\": \"2026-10-04\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8073/api/books/inquiry",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8073",
+          "path": [
+            "api",
+            "books",
+            "inquiry"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Find By Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8073/api/books/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8073",
+          "path": [
+            "api",
+            "books",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Testing\",\r\n    \"author\": \"Ananda Muhammad Hafiz\",\r\n    \"isbn\": \"A-001\",\r\n    \"publishedDate\": \"2026-10-04\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8073/api/books/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8073",
+          "path": [
+            "api",
+            "books",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Patch",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Testing PATCH\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8073/api/books/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8073",
+          "path": [
+            "api",
+            "books",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8073/api/books/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8073",
+          "path": [
+            "api",
+            "books",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
